@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<style>
+.button {padding:4px;width:104px;height:104px;border-radius:10%;}
+.buttonSize {font-size: 24px;background-color: grey;}
+.buttonResult {font-size: 250px;width: 304px;height: 304px;background-color: grey; }
+</style>
+<body>
+<div align="center">
+<h2>Random number</h2>
+<p><button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(0,0)">Clear</button></p>
+<p>
+  <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(1,3)">1-2</button> 
+  <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(2,5)">2-4</button> 
+  <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(4,7)">4-6</button> 
+  <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(7,13)">7-12</button> 
+  <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(11,21)">11-20</button> 
+  <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(21,31)">21-30</button> 
+</p>
+<p><button class="button buttonResult" id="demo"></button></p>
+</div>
+<script>function getRndInteger(min,max){return Math.floor(Math.random() * (max - min)) + min;}</script>
+</body>
+</html>
