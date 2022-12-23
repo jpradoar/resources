@@ -2,8 +2,8 @@
 <html>
 <style>
 .button {padding:4px;width:204px;height:204px;border-radius:10%;}
-.buttonSize {font-size: 48px;background-color: grey;}
-.buttonResult {font-size: 350px;width: 404px;height: 404px;background-color: grey; }
+.buttonSize {font-size: 110px;width: 350px;height: 350px;background-color: grey; }
+.buttonResult {font-size: 470px;width: 550px;height: 550px;background-color: grey; }
 </style>
 <body>
 <div align="center">
@@ -16,7 +16,7 @@
   <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(7,13)">7-12</button> 
   <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(11,21)">11-20</button> 
   <button class="button buttonSize" onclick="document.getElementById('demo').innerHTML = getRndInteger(21,31)">21-30</button> 
-</p>
+</p><br><br><br>
 <p><button class="button buttonResult" id="demo"></button></p>
 </div>
 <script>function getRndInteger(min,max){return Math.floor(Math.random() * (max - min)) + min;}</script>
